@@ -1,18 +1,17 @@
 body{
   height: 100vh;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
   margin:0;
   border: 0;
   padding: 0;
 }
 #windows{
-  display:fixed;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
   margin:0;
   border: 0;
   padding: 0;
@@ -22,7 +21,17 @@ h2, p{
   width: 84%;
   -webkit-transform: translate(8%,0%);
           transform: translate(8%,0%);
-  font-size: 50%;
+  font-size: 100%;
+}
+@media only screen and (max-width: 600px) {
+  h2, p{
+
+    text-align: justify;
+    width: 84%;
+    -webkit-transform: translate(8%,0%);
+            transform: translate(8%,0%);
+    font-size: 60%;
+  }
 }
 p{
   font-family: Open Sans;
