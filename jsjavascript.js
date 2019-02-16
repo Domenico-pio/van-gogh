@@ -26,17 +26,17 @@ i=i+1;
       document.getElementById("muro6").style.animation="slide3d 2s linear forwards running";
       break;
     case 6:
-      window.alert("case 6");
+      //window.alert("case 6");
       document.getElementById("angolo4").style.animation="slide2d2 2s linear forwards running";
       document.getElementById("angolo3").style.animation="slide2d3 2s linear forwards running";
       break;
     case 7:
-    window.alert("case 7");
+    //window.alert("case 7");
       document.getElementById("muro8").style.animation="slide3d 2s linear forwards running";
       /*document.getElementById("muro1").style.animation="slide3dr 2s linear forwards running";*/
       break;
     case 8:
-      window.alert("case 8");
+      //window.alert("case 8");
       document.getElementById("angolo4").style.animation="slide2d3 2s linear forwards running";
       document.getElementById("muro10").style.animation="slide2d 2s linear forwards running";
     /*
@@ -46,8 +46,11 @@ i=i+1;
       break;
 
     default:
+      {
       //window.alert(i);
+        i=-1;
       window.location.reload();
+      }
   }
 
 
@@ -88,7 +91,11 @@ function girasx(){
       document.getElementById("muro10").style.animation="slide2dr 2s linear forwards running";
       break;
     default:
-    window.alert(i);
+      {
+      //window.alert(i);
+        
+      }
+      
   }
   i=i-1;
 }
