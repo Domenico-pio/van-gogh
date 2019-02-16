@@ -12,6 +12,7 @@ h2, p{
   width: 84%;
   -webkit-transform: translate(8%,0%);
           transform: translate(8%,0%);
+  font-size: 50%;
 }
 p{
   font-family: Open Sans;
