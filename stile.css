@@ -10,7 +10,8 @@ body{
 h2, p{
   text-align: justify;
   width: 84%;
-  transform: translate(8%,0%);
+  -webkit-transform: translate(8%,0%);
+          transform: translate(8%,0%);
 }
 p{
   font-family: Open Sans;
@@ -49,7 +50,8 @@ h2{
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 16px solid ;
   padding: 10px;
   border-color: #000000;
@@ -66,7 +68,8 @@ h2{
   position: absolute;
 }
 .descrizione{
-  animation: up 2s linear forwards paused;
+  -webkit-animation: up 2s linear forwards paused;
+          animation: up 2s linear forwards paused;
   position: absolute;
 
   /*box-shadow:20px 20px 50px grey;*/
@@ -91,7 +94,8 @@ h2{
 .pulsanti{
   position: absolute;
   text-align: center;
-  transform-origin: center center 0;
+  -webkit-transform-origin: center center 0;
+          transform-origin: center center 0;
   background-color: transparent;
   top:80%;
   left:15%;
@@ -119,8 +123,10 @@ h2{
 }
 
 .galleria{
-  perspective: 200vw;
-  perspective-origin: top center;
+  -webkit-perspective: 200vw;
+          perspective: 200vw;
+  -webkit-perspective-origin: top center;
+          perspective-origin: top center;
   background-color: #65490e;
   width: 100%;
   height: 100%;
@@ -131,85 +137,144 @@ h2{
   position: absolute;
   background-color: white;
   /*background-image: url("immagini/pavimento.jpg");*/
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   width: 100%;
   z-index: 0;
   height:  100%;
 }
 .angolo{
   position: absolute;
-  perspective: 200vw;
-  perspective-origin: top center;
-  animation: slide2d2 2s linear forwards paused;
+  -webkit-perspective: 200vw;
+          perspective: 200vw;
+  -webkit-perspective-origin: top center;
+          perspective-origin: top center;
+  -webkit-animation: slide2d2 2s linear forwards paused;
+          animation: slide2d2 2s linear forwards paused;
   z-index: 1;
-  transform: translate(100%,0%);
+  -webkit-transform: translate(100%,0%);
+          transform: translate(100%,0%);
   height: 100%;
   width: 100%;
 }
 #angolo1{
   z-index: -1;
-  transform: translate(0%,0%);
+  -webkit-transform: translate(0%,0%);
+          transform: translate(0%,0%);
 }
 #muro1,#muro3,#muro6,#muro8{
-  animation: slide3d 2s linear forwards paused;
-  transform-origin: bottom left 0;
-  transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );
+  -webkit-animation: slide3d 2s linear forwards paused;
+          animation: slide3d 2s linear forwards paused;
+  -webkit-transform-origin: bottom left 0;
+          transform-origin: bottom left 0;
+  -webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );
+          transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );
 }
 #muro2,#muro4,#muro7,#muro9{
-  transform-origin: bottom right 0;
-  transform: rotate3d(0, 1, 0, -90deg) translate3d(100%, 0px, 0px );
+  -webkit-transform-origin: bottom right 0;
+          transform-origin: bottom right 0;
+  -webkit-transform: rotate3d(0, 1, 0, -90deg) translate3d(100%, 0px, 0px );
+          transform: rotate3d(0, 1, 0, -90deg) translate3d(100%, 0px, 0px );
 }
 
 #muro5,#muro10{
-  animation: slide2d 2s linear paused;
-  transform-origin: bottom left 0;
-  transform:  translate3d(100%, 0px, 0px );
+  -webkit-animation: slide2d 2s linear paused;
+          animation: slide2d 2s linear paused;
+  -webkit-transform-origin: bottom left 0;
+          transform-origin: bottom left 0;
+  -webkit-transform:  translate3d(100%, 0px, 0px );
+          transform:  translate3d(100%, 0px, 0px );
 }
 
 
 /*animazioni*/
+@-webkit-keyframes slide3d {
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
+}
 @keyframes slide3d {
-  0% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
-  100% {transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
+}
+@-webkit-keyframes slide3dr {
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
 }
 @keyframes slide3dr {
-  0% {transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
-  100% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 90deg) translate3d(-100%, 0px, 0px ); }
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );}
+}
+@-webkit-keyframes slide2d2 {
+  0% {left:0;}
+  100%{left: -100%;}
 }
 @keyframes slide2d2 {
   0% {left:0;}
   100%{left: -100%;}
 }
+@-webkit-keyframes slide2d2r {
+  0%{left: -100%;}
+  100% {left:0;}
+}
 @keyframes slide2d2r {
   0%{left: -100%;}
   100% {left:0;}
+}
+@-webkit-keyframes slide2d3 {
+  0% {left:-100%;}
+  100%{left: -200%;}
 }
 @keyframes slide2d3 {
   0% {left:-100%;}
   100%{left: -200%;}
 }
+@-webkit-keyframes slide2d3r {
+  0% {left:-200%;}
+  100%{left: -100%;}
+}
 @keyframes slide2d3r {
   0% {left:-200%;}
   100%{left: -100%;}
 }
+@-webkit-keyframes slide2d {
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
+}
 @keyframes slide2d {
-  0% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
-  100% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
+}
+@-webkit-keyframes slide2dr {
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
+
 }
 @keyframes slide2dr {
-  0% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
-  100% {transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
+  0% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(0%, 0px, 0px ); }
+  100% {-webkit-transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );transform:  rotate3d(0, 1, 0, 0deg) translate3d(100%, 0px, 0px );}
 
+}
+@-webkit-keyframes up {
+  0%{ top:100%;}
+  100%{top: 59%;}
 }
 @keyframes up {
   0%{ top:100%;}
   100%{top: 59%;}
 }
+@-webkit-keyframes down {
+  0%{ top:59%;}
+  100%{top: 100%;}
+}
 @keyframes down {
   0%{ top:59%;}
   100%{top: 100%;}
 }
+@-webkit-keyframes turn {
+  0%{-webkit-transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
+  100%{-webkit-transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
+}
 @keyframes turn {
-  0%{transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
-  100%{transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
+  0%{-webkit-transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
+  100%{-webkit-transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);transform: rotate3d(1 , 0, 0, 90deg) translate(0%,100%);}
 }
