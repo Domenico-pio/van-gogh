@@ -29,7 +29,7 @@ h2{
   background-color: #cccccc;
   border: 0px;
   font-family: Comic Sans MS;
-  font-size: 200%;
+  /*font-size: 200%;*/
   z-index: -1;
   position: absolute;
   cursor: pointer;
