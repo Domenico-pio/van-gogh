@@ -40,6 +40,7 @@ button:hover {
 }
 .descrizione{
   display: none;
+  box-sizing: border-box;
   height: 60%;
   width: 60vh;
   max-width: 60vw;
@@ -47,7 +48,7 @@ button:hover {
   margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 2.9vh;
   color: white;
   background-color: black;
 }
@@ -60,6 +61,7 @@ button:hover {
   border-radius: 45px;
   cursor: pointer;
   color: white;
+  font-size: 2.7vh;
   transition-duration: 0.4s;
 }
 /*immagini*/
