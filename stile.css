@@ -48,7 +48,7 @@ body{
   border: solid 1.6vh #8B4513;
   padding: 0.8vh;
   background-color: white;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.52), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .picture button{
   box-sizing: border-box;
@@ -75,7 +75,7 @@ body{
 .muro{
   position: absolute;
   box-sizing: border-box;
-  background-color: #3ca091;  /*238fbf*/
+  background-image:#3ca091;  /*238fbf*/
   /*border: 30px solid black;*/
   text-align: center;
   height: 80%;
