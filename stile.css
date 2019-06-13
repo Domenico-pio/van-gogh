@@ -75,7 +75,7 @@ body{
 .muro{
   position: absolute;
   box-sizing: border-box;
-  background-image:#3ca091;  /*238fbf*/
+  background-image:radial-gradient(circle,#3ca091 ,black 220%); /*238fbf*/
   /*border: 30px solid black;*/
   text-align: center;
   height: 80%;
@@ -87,7 +87,7 @@ body{
 .murol{
   box-sizing: border-box;
   position: absolute;
-  background-color: #3ca091;
+  background-image:radial-gradient(circle,#3ca091 ,black 220%);
   height: 80%;
   width: 100%;
   text-align: center;
