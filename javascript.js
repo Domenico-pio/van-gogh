@@ -183,3 +183,14 @@ function girasx(){
 function start(){
   play=true;
 }
+
+
+//descrizioni
+
+function up() {
+
+}
+
+function down() {
+
+}
