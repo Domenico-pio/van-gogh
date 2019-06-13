@@ -75,7 +75,7 @@ body{
 .muro{
   position: absolute;
   box-sizing: border-box;
-  background-image:radial-gradient(circle,#3ca091 ,black 220%); /*238fbf*/
+  background-image:linear-gradient(to right,#3ca091 ,black 220%); /*238fbf*/
   /*border: 30px solid black;*/
   text-align: center;
   height: 80%;
@@ -87,7 +87,7 @@ body{
 .murol{
   box-sizing: border-box;
   position: absolute;
-  background-image:radial-gradient(circle,#3ca091 ,black 220%);
+  background-image:linear-gradient(to right,#3ca091 ,black 220%);
   height: 80%;
   width: 100%;
   text-align: center;
@@ -113,7 +113,10 @@ body{
 #floor1, #floor4{
   background-image: url("immagini/pavimento3.jpg");
 }
-
+#muro3, #muro8{
+  background-color: #3ca091;
+  background-image: none;
+}
 #angolo1{
   display: block;
 }
