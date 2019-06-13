@@ -47,6 +47,7 @@ body{
   margin-bottom: 4%;
   border: solid 1.6vh #8B4513;
   padding: 0.8vh;
+  background-color: white
 }
 .picture button{
   box-sizing: border-box;
@@ -73,7 +74,7 @@ body{
 .muro{
   position: absolute;
   box-sizing: border-box;
-  background-color: #b6b6b6;
+  background-color: #238fbf;
   /*border: 30px solid black;*/
   text-align: center;
   height: 80%;
@@ -85,7 +86,7 @@ body{
 .murol{
   box-sizing: border-box;
   position: absolute;
-  background-color: #b6b6b6;
+  background-color: #238fbf;
   height: 80%;
   width: 100%;
   text-align: center;
