@@ -187,10 +187,96 @@ function start(){
 
 //descrizioni
 
-function up() {
+function up(input) {
+  switch (input) {
+    case 1:
+        document.getElementById("didascalia1").style.display="block";
+        document.getElementById("descrizione1").style.display="block";
+      break;
+    case 2:
+        document.getElementById("descrizione2").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 3:
+        document.getElementById("descrizione3").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 4:
+        document.getElementById("descrizione4").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 5:
+        document.getElementById("descrizione5").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 6:
+        document.getElementById("descrizione6").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 7:
+        document.getElementById("descrizione7").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 8:
+        document.getElementById("descrizione8").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 9:
+        document.getElementById("descrizione9").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    case 10:
+        document.getElementById("descrizione10").style.display="block";
+        document.getElementById("didascalia1").style.display="block";
+      break;
+    default:
 
+  }
 }
 
-function down() {
+function down(input) {
+  switch (input) {
+    case 1:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione1").style.display="none";
+      break;
+    case 2:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione2").style.display="none";
+      break;
+    case 3:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione3").style.display="none";
+      break;
+    case 4:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione4").style.display="none";
+      break;
+    case 5:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione5").style.display="none";
+      break;
+    case 6:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione6").style.display="none";
+      break;
+    case 7:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione7").style.display="none";
+      break;
+    case 8:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione8").style.display="none";
+      break;
+    case 9:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione9").style.display="none";
+      break;
+    case 10:
+        document.getElementById("didascalia1").style.display="none";
+        document.getElementById("descrizione10").style.display="none";
+      break;
+    default:
 
+  }
 }
