@@ -98,7 +98,6 @@ button:hover {
 }
 .picture button{
   box-sizing: border-box;
-  float: right;
   background-color: transparent;
   border: 0;
   padding: 0;
