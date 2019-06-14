@@ -20,6 +20,7 @@ body{
 #filtro{
   height: 100vh;
   width: 100vw;
+  background-image: -webkit-gradient( linear, left top, left bottom, color-stop(15%, #6caffb00), color-stop(30%, #00278375), color-stop(90%, #000000d4),to(black));
   background-image: linear-gradient( to bottom, #6caffb00 15%, #00278375 30%, #000000d4 90%,black);
   position: absolute;
   z-index: 10;
@@ -30,26 +31,31 @@ body{
   top:0;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  transform: translateY(-80%);
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
 }
 #sfondo1{
   background-image: url("immagini/sfondo1.png");
 }
 #sfondo2{
   background-image: url("immagini/sfondo2.png");
-  transform: translateY(-60%);
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 #sfondo3{
   background-image: url("immagini/sfondo3.png");
-  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 #sfondo4{
   background-image: url("immagini/sfondo4.png");
-  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 #sfondo5{
   background-image: url("immagini/sfondo5.png");
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 .pro{
   height: 100vh;
@@ -59,6 +65,7 @@ body{
 }
 .pic{
   display: block;
+  position: -webkit-sticky;
   position: sticky;
   top:-20vh;
   width: 100vw;
@@ -103,11 +110,13 @@ body{
   color:white;
   font-family: 'Century Gothic' , sans-serif ;
   font-weight: bold;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 .image a:hover{
   background-color: #120b0b4d;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.52), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.52), 0 6px 20px 0 rgba(0,0,0,0.19);
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.52), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #home:hover{
   background-color: #ffffff36;
@@ -153,7 +162,8 @@ body{
 #paragrafo{
   width: 72vw;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
   margin-left: 18vw;
