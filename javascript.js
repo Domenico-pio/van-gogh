@@ -184,7 +184,6 @@ function start(){
   play=true;
 }
 
-
 //descrizioni
 
 function up(input) {
@@ -280,3 +279,14 @@ function down(input) {
 
   }
 }
+
+//zoom
+function zoom(h) {
+  document.getElementById("myModal").style.display="block";
+  document.getElementById("img01").src=h.src;
+  document.getElementById("caption").innerHTML= h.alt;
+}
+
+function chiudi() {
+    document.getElementById("myModal").style.display="none";
+  }
