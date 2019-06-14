@@ -90,7 +90,7 @@ body{
   position: absolute;
   z-index:19;
   text-decoration: none;
-  border: 0.62vw solid white ;
+  border: 0.62vmin solid white ;
   border-radius: 1vw;
   width: 15vmax;
   left: calc(50vw - 15vmax/2);
