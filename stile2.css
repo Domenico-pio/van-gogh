@@ -1,0 +1,149 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  margin:0;
+  border: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
+
+.image{
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#filtro{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient( to bottom, #6caffb00 15%, #00278375 30%, #000000d4 90%,black);
+  position: absolute;
+  z-index: 10;
+}
+.sfondo{
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: translateY(-80%);
+}
+#sfondo1{
+  background-image: url("immagini/sfondo1.png");
+}
+#sfondo2{
+  background-image: url("immagini/sfondo2.png");
+  transform: translateY(-60%);
+}
+#sfondo3{
+  background-image: url("immagini/sfondo3.png");
+  transform: translateY(-40%);
+}
+#sfondo4{
+  background-image: url("immagini/sfondo4.png");
+  transform: translateY(-20%);
+}
+#sfondo5{
+  background-image: url("immagini/sfondo5.png");
+  transform: translateY(0%);
+}
+
+.image a , #home{
+  position: absolute;
+  z-index:19;
+  text-decoration: none;
+  border: 0.62vw solid white ;
+  border-radius: 1vw;
+  width: 15vw;
+  left: 42.5vw;
+  text-align: center;
+  line-height: 7vw;
+  top: calc(50vh - 3.5vw);
+  height: 7vw;
+  font-size: 5.2vh;
+  color:white;
+  font-family: 'Century Gothic' , sans-serif ;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+.image a:hover{
+  background-color: #120b0b4d;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.52), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#home:hover{
+  background-color: #ffffff36;
+  box-shadow: 0px 9px 20px 8px rgb(54, 54, 54), 0 6px 2px 0px rgb(0, 0, 0);
+}
+#in, #home{
+  top:0;
+  left: 94vw;
+  border: 0;
+  border-radius: 50%;
+  height: 6vw;
+  line-height: 6vw;
+  width: 6vw;
+  z-index: 19;
+
+}
+#home{
+  top:calc(100vh - 6vw);
+}
+.image h1{
+  position: absolute;
+  z-index:19;
+  color: white;
+  font-family: 'Century Gothic' , sans-serif ;
+  width: 100%;
+  text-align: center;
+  top:15vh;
+}
+
+
+
+.informazioni{
+  display: block;
+  position: absolute;
+  top:100vh;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+}
+
+.pro{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top:0;
+}
+.pic{
+  display: block;
+  position: sticky;
+  top:-20vh;
+  width: 100vw;
+  height: 20vh;
+}
+#pic1{
+  margin-top:0vh;
+  z-index: 5;
+}
+#pic2{
+  margin-top:20vh;
+  z-index: 6;
+}
+#pic3{
+  margin-top:40vh;
+  z-index: 7;
+}
+#pic4{
+  margin-top:60vh;
+  z-index: 8;
+}
+#pic5{
+  margin-top:80vh;
+  z-index: 9;
+}

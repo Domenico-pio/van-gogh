@@ -41,11 +41,11 @@ button:hover {
 .descrizione{
   display: none;
   box-sizing: border-box;
-  height: 60%;
-  width: 60vh;
+  height: 68%;
+  width: 68vh;
   max-width: 60vw;
   overflow-y: auto;
-  margin-top: 20vh;
+  margin-top: 16vh;
   margin-left: auto;
   margin-right: auto;
   padding: 2.9vh;
@@ -63,6 +63,12 @@ button:hover {
   color: white;
   font-size: 2.7vh;
   transition-duration: 0.4s;
+}
+.descrizione h2{
+  font-size: 3.8vh;
+}
+.descrizione{
+  font-size: 2.6vh;
 }
 /*immagini*/
 
