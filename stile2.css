@@ -20,8 +20,7 @@ body{
 #filtro{
   height: 100vh;
   width: 100vw;
-  background-image: -webkit-gradient( linear, left top, left bottom, color-stop(15%, #6caffb00), color-stop(30%, #00278375), color-stop(90%, #000000d4),to(black));
-  background-image: linear-gradient( to bottom, #6caffb00 15%, #00278375 30%, #000000d4 90%,black);
+  background-image: linear-gradient( to bottom, rgba(108, 175, 251, 0) 15%, rgba(0, 39, 131, 0.4588235294117647) 30%, rgba(0, 0, 0, 0.8313725490196079) 90%,rgb(0, 0, 0));
   position: absolute;
   z-index: 10;
 }
