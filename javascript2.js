@@ -13,7 +13,7 @@ var sticky4 = (sticky1+(10*vh)) * 4;
 var sticky5 = (sticky1+(10*vh)) * 5;
 
 
-window.alert(sticky1 +"  "+ window.pageYOffset);
+//window.alert(sticky1 +"  "+ window.pageYOffset);
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky1) {
