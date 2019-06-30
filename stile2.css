@@ -65,7 +65,7 @@ body{
 }
 .pic{
   display: block;
-  position: relative; 
+  position: relative;
   /*position: -webkit-sticky;
   position: sticky;*/
   /*top:-20vh;*/
@@ -189,6 +189,9 @@ body{
 ul{
   margin: 0;
   text-align: left;
+}
+ul span{
+  float: right;
 }
 @media only screen and (max-width: 441px) {
   #paragrafo{
