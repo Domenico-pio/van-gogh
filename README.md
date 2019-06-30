@@ -1,2 +1,2 @@
-# van-gogh
+# Van Gogh
 van gogh virtual gallery
